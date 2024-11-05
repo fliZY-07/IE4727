@@ -1,0 +1,61 @@
+form {
+    margin-top: 20px;
+}
+
+
+form table {
+    width: 100%;
+}
+
+form table td {
+    padding: 10px 0px;
+    vertical-align: top;
+}
+
+form table td:nth-child(1) {
+    width: 150px;
+}
+
+/* Label and input alignment */
+form label {
+    font-weight: bold;
+    color: #532e28;
+}
+
+form input,
+form select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="file"] {
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+/* Error message styling */
+form span {
+    color: rgb(112, 54, 54);
+    font-size: 0.8em;
+}
+
+/* Button styling */
+#submit-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #91937b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #7e806b;
+}
+

@@ -1,0 +1,252 @@
+button{
+  font-size: 16px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: black;
+  border-radius: 30px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.2s;
+}
+
+.text-content {
+  padding-left: 30px;;
+}
+
+#new-collections{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 30px;
+}
+  
+#new-collections h2{
+  font-size: 70px;
+  font-weight: 800;
+  color: #A3764d;
+}
+
+#new-collections p{
+  margin-top: 5px;
+}
+
+#new-collections img{
+  width: 40%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+#getSame {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+
+#style{
+  display: flex;
+  width: 100%;
+  align-items: right;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+#style-content {
+  margin-right: 0px;
+  text-align: right;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+}
+
+#style-header{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 70px;
+  align-items: end;
+  padding-bottom: 10px;
+  float:right
+}
+
+#style-header button{
+  margin-bottom: 15px;
+}
+
+#style-header h1{
+  font-size: 80px;
+  color: #A3764d;
+}
+
+#style img{
+  height: 300px;
+  width: 400px;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+
+#sm-banner .banner-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url(../asset/image/styleloftbanner.jpg);
+  width: 100%;
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+}
+
+#sm-banner h4{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#sm-banner h2{
+  color: #fff;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+#sm-banner span{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sm-banner button{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+}
+
+#sm-banner .banner-box:hover button{
+  background: #088178;
+  border: 1px solid #088178;
+}
+
+#best-seller{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#best-seller-left h2{
+  font-size: 50px;
+  color: #A3764d;
+}
+
+#best-seller-left p{
+  margin-bottom: 15px;
+}
+
+#best-seller-left{
+  width: 70%;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+#products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 20px;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.productcard {
+  width: 23%;
+  min-width: 250px;
+  height: auto;
+  padding: 10px 12px;
+  background-color: #fcfbf6;
+  border: 1px solid #cce7d0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 0;
+  transition: 0.2s ease;
+  position: relative;
+}
+
+.productcard img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.productcard i {
+  color: #1a1a1a;
+  transition: 0.3s ease;  
+}
+
+.productcard .description{
+  text-align: start;
+  padding: 2px 0;
+}
+
+.productcard .description h3{
+  color: #606063;
+  font-size: 18px;
+  font-weight: 700;
+  padding-bottom: 0px;
+}
+
+.productcard .description p{
+  font-size: 15px;
+}
+
+.productcard h4 {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 3x;
+  text-align: left;
+}
+
+.productcard .cart{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #e8f6ea;
+  color: #088178;
+  text-align: center;
+  border: 1px solid #cce7d0;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#best-seller-img{
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 27%;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button a:hover {
+    color: #cce7d0;
+}

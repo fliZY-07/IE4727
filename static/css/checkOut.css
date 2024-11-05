@@ -1,0 +1,220 @@
+header {
+    justify-content: left;
+    gap:15px;
+}
+
+header h2 {
+    color:#532e28;
+    font-size: 25px;
+}
+
+button#backToCart {
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fcfbf6;
+    background-color: #91937b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+button#backToCart:hover {
+    background-color: #869494;
+}
+
+.checkOut {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#newOrder {
+    width: 100%;
+    display: flex;
+}
+
+#leftColumn {
+    flex-grow: 1;
+    padding-right: 20px;
+    border-right: 1px solid #aeacac;
+
+}
+
+#rightColumn {
+    max-width: 300px;
+    padding-left: 20px;
+}
+
+#rightColumn h3 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+.shippingAddress {
+    background-color: #fcfbf6;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0,0 , 0.06);
+    margin-bottom: 20px;
+}
+
+.shippingAddress i {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 35px;
+    padding-right: 20px;
+}
+
+.shippingAddress h2 {
+    font-size: 18px;
+}
+
+.shippingAddress p {
+    font-size: 14px;
+}
+
+.checkOutProduct {
+    background-color: #fcfbf6;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0,0 , 0.06);
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.deliveryOption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.deliveryOption button[type="button"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    justify-content: space-between;
+    color: #fcfbf6;
+    background-color: #91937b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.deliveryOption button[type="button"]:hover {
+    background-color: #869494;
+}
+
+.orderSummary {
+    background-color: #fcfbf6;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0,0 , 0.06);
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.orderSummary h3 {
+    font-weight: bold;
+    font-size: 12px;
+    color: #532e28;
+}
+
+.orderSummary small {
+    font-size: 10px;
+    color: #574e4c;
+}
+
+#bill {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#subtotal, #shipping, #total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payment {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fcfbf6;
+}
+
+.payment label {
+    display: block;
+    padding-left: 3px;
+    padding-top: 8px;
+}
+
+.payment span {
+    display: block; 
+    padding: 0px 6px; 
+    color: #721c24; 
+    font-size: 14px;
+}
+
+.email {
+    padding-bottom: 9px;
+    border-bottom: 1px solid #aeacac;
+    margin-bottom:  8px;
+}
+
+.expiry-cvv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    width: 100%; 
+    gap: 5px;
+}
+
+.expiry-cvv label {
+    display: block;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    margin-top: 8px;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #91937b;
+    font-family: 'Poppins';
+    color: #fcfbf6;
+}
+
+input[type="submit"]:hover {
+    background-color: #869494;
+}
+

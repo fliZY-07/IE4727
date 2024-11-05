@@ -1,0 +1,115 @@
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.tabs button {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 18px;
+    color: #a3764d;
+}
+
+.tabs button:hover,
+.tabs button.active {
+    color: #532e28;
+}
+
+#all-btn {
+    border-top-left-radius: 0.5em;
+}
+
+#received-btn {
+    border-top-right-radius: 0.5em;
+}
+
+
+/* Orders styling */
+.orderItem {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the product image */
+.order-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+}
+
+/* Container for product details */
+.orderDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8px 0;
+}
+
+/* Details for product information */
+.orderInfo {
+    max-width: 70%;
+}
+
+/* Product name */
+.orderInfo h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0;
+}
+
+/* Product description */
+.orderInfo p {
+    font-size: 0.9em;
+    color: #666;
+    margin: 4px 0;
+}
+
+/* Price styling */
+.orderPrice {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+    white-space: nowrap;
+}
+
+/* Divider line between items */
+.order-divider {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 12px 0;
+}
+
+/* Order status section */
+.orderStatus {
+    text-align: right;
+    color: #555;
+    font-size: 0.9em;
+}
+
+/* Specific styling for status text */
+.orderStatus p {
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Hover effect for the whole order item */
+.orderItem:hover {
+    background-color: #f1f1f1;
+    border-color: #ccc;
+}

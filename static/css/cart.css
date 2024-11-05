@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400&display=swap');
+
+#cart {
+    background: #fcfbf6;
+    padding: 20px;
+    margin: 20px 0;
+    border-right: 1px solid #859393; 
+    border-bottom: 1px solid #869494;
+    border-radius: 10px;  
+}
+
+#cart h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.cartItem img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 2px #eaeaea;
+}
+
+input[type="checkbox"] {
+    margin-right: 25px;
+}
+
+.productDetails {
+    height: 200px;
+    flex-grow: 2;
+    padding-left: 40px;
+}
+
+.productDetails h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #869494;
+    font-size: 28px;
+    padding-bottom: 2px;
+}
+
+.productDetails p {
+    font-size: 20px;
+    color: #91937b;
+    margin: 2px 0 0;
+}
+
+.quantity, .size {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #532e28;
+}
+
+.quantity input[type="number"] {
+    width: 50px;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.size select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 0px;
+}
+
+/* select all checkbox */
+#cart div:nth-child(2) {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#cart div:nth-child(2) p {
+    font-size: 18px;
+    margin: 0;
+}
+
+.subtotalremove {
+    align-items: right;
+    height: 200px;
+    padding: 0.5%;
+}
+
+/* total price */
+.total {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+    color: #a3764d;
+    align-items: center;
+}
+
+/* buttons */
+button[type="submit"], button[type="button"] {
+    padding: 8px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fcfbf6;
+    background-color: #869494;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover, button[type="button"]:hover {
+    background-color: #a3764d;
+}
+
+#removeButton button[type="submit"] {
+    font-size: 20px;
+    padding: 2px 2px;
+    border-radius: 15px;
+    margin-left: 35%;
+    margin-top: 50%;
+}
+
+#removeButton button[type="submit"]:hover {
+    background-color: #532e28;
+    margin-bottom: 10px;
+    border-bottom: #869494;
+}
+
+
+
+#action {
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #eaeaea;
+}
+
+/* suggestion section */
+#guess {
+    margin-top: 40px;
+    padding: 5px 5px;
+    background-color: #E0DDD6;
+}
+
+#guess h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #532e28;
+}
+
+.suggestionGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.suggestionItem {
+    text-align: center;
+    padding: 15px;
+    background-color: #fcfbf6;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    color: #532e28;
+}
+
+.suggestionItem img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.suggestionItem button {
+    margin-top: 10px;
+    background-color: #91937b;
+    color: #fcfbf6;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.suggestionItem button:hover {
+    background-color: #a3764d;
+}

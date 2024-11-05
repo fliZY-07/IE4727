@@ -1,0 +1,174 @@
+/* banner */
+.banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: left;
+    background-image: url(../asset/image/styleloftbanner.jpg);
+    opacity: 0.8;
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    padding: 0 0 20px 3em;
+}
+
+.banner-box h4{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    opacity: 1;
+}
+
+.banner-box h2{
+    color: #fff;
+    font-size: 36px;
+    font-weight: 800;
+    opacity: 1;
+}
+
+.banner-box span{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    opacity: 1;
+}
+
+.banner-box button{
+    font-size: 15px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+    opacity: 1;
+}
+
+.banner-box .banner-box:hover button{
+    background: #088178;
+    border: 1px solid #088178;
+    opacity: 1;
+}
+
+#productsWrapper {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+}
+
+form{
+    width: 100%;
+    margin-right: 20px;
+    height: 100vh;
+}
+
+
+/*filter and sort*/
+#filter {
+    width: 20%;
+    min-width: 150px;
+    border-right: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+#filter h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.filter-option input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/*Product card css*/
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    margin: 0;
+    align-items: center;
+    gap: 10px
+}
+
+.productcard {
+    width: 23%;
+    min-width: 250px;
+    height: auto;
+    padding: 10px 12px;
+    background-color: #fcfbf6;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 0;
+    transition: 0.2s ease;
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.productcard img {
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.productcard i {
+    color: #1a1a1a;
+    transition: 0.3s ease;  
+}
+
+.productcard .description{
+    text-align: start;
+    padding: 2px 0;
+}
+
+.productcard .description h2{
+    color: #606063;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 0px;
+}
+
+.productcard .description p{
+    font-size: 15px;
+}
+
+.productcard #testing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productcard h4 {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.productcard .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    text-align: center;
+    border: 1px solid #cce7d0;
+}
+
+
