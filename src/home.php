@@ -11,7 +11,7 @@
     <header>
         <div id="searchbar">
             <a href="#"><img src="../static/asset/image/logo.png" class="logo" alt="logo"></a>
-            <input type="text" placeholder="search">
+            <!-- <input type="text" placeholder="search"> -->
         </div>
 
         <div>

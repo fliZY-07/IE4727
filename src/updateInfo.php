@@ -13,7 +13,7 @@
     <header>
         <div id="searchbar">
             <a href="#"><img src="../static/asset/image/logo.png" class="logo" alt="logo"></a>
-            <input type="text" placeholder="search">
+            <!-- <input type="text" placeholder="search"> -->
         </div>
 
         <div>
@@ -55,7 +55,7 @@
          
         <div id="rightColumn">
             <h2><i class="fa-solid fa-pen-to-square"></i>&nbsp Update Information</h2>
-            <form action="profile.php" method="POST" id="profile-form">
+            <form action="updateInfo.php" method="POST" id="profile-form">
                 <div>
                     <label for="firstName">First Name</label>
                     <input type="text" placeholder='Your first name here' name="firstName"/>
@@ -151,6 +151,7 @@
                         // Clean up
                         $stmt->close();
                         $db->close();
+                        header("location: ./profile.php");
                 }
                 ?>
             </div>
@@ -181,8 +182,8 @@
         </div>
         
         <div>
-            Copyright &copy; the Style LOFT
-            <br>by Joshua & ZhiYi<br>
+            <p>Copyright &copy; the Style LOFT
+            <br>by Joshua & ZhiYi<br></p>
         </div>
     </footer>
 

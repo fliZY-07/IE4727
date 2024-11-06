@@ -5,6 +5,7 @@ print_r($_POST);
 echo "</pre>";
 
 include("./utils/loginStatus.php");
+include("./utils/email.php");
 
 // Connect to the database
 $db = new mysqli('localhost', 'root', '', 'myStyleLoft');
@@ -70,6 +71,13 @@ $stmt->close();
 $deleteStmt->close();
 $db->close();
 
+sendMail($_POST['email'], $orderId);
+
 // Redirect to order tracking after all inserts
-header('Location: orderTracking.php');
+echo "<script>
+         alert('Transaction has completed successfully!');
+         setTimeout(function() {
+             window.location.href = 'orderTracking.php';
+         }), 0.5; 
+      </script>";
 exit;

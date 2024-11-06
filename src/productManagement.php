@@ -59,14 +59,14 @@
                 if ($result) {
                     while ($row = $result->fetch_assoc()) {  
                         echo "<tr>";
-                        echo '<td id="productId">'.$row['productId'].'</td>';
+                        echo '<td>'.$row['productId'].'</td>';
                         echo '<td><img src="'.$row['productImage'].'"></td>';
                         echo '<td>'.htmlspecialchars($row['productName']).'</td>';
                         echo '<td>'.htmlspecialchars($row['descrip']).'</td>';
                         echo '<td>$'.number_format($row['price'], 2).'</td>';
                         echo '<td>'.htmlspecialchars($row['gender']).', '.htmlspecialchars($row['category']).'</td>';
                         echo '<td><button type="button" id="edit" onclick="window.location.href=\'editDetails.php?id=' . $row['productId'] . '\'">Edit</button>';
-                        echo '<button type="button" id="delete">Delete</button></td>';
+                        echo '<button type="button" class="delete" data-productId = "'.$row['productId'].'">Delete</button></td>';
                         echo "</tr>";
                     }
                 } else {

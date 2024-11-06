@@ -1,0 +1,12 @@
+{
+    "name": "lenovo/my-style-loft",
+    "require-dev": {
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "authors": [
+        {
+            "name": "Flizy",
+            "email": "zhiyiseaw12345@gmail.com"
+        }
+    ]
+}

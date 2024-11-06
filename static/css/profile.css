@@ -14,7 +14,7 @@
 }
 
 #leftColumn {
-    width: 40%;
+    width: 35%;
     padding: 5px;
     border-right: 1px solid #91937B;
     color:#532e28;
@@ -23,36 +23,37 @@
     justify-content: space-between;
 }
 
-nav {
+#leftColumn nav {
     text-align: left;
     font-size: 16px;
     color:#532e28;
-    padding-right: 0px 20px 0px 0px;
+    padding: 0px;
     margin: 0px;
 }
 
-nav li {
+#leftColumn nav li {
     list-style: none;
     font-weight: bold;
+    padding: 0px;
 }
 
-nav i {
-    color: #532e28;
+#leftColumn nav i {
+    color: #a3764d;
     padding-right: 10px;
     font-size: 16px;
 }
 
-a {
+#leftColumn a {
     text-decoration: none;
     color: #a3764d;
     font-size: 18px;
 }
 
-nav li a.active {
+#leftColumn nav li a.active {
     color: #532e28;
 }
 
-nav a.active i {
+#leftColumn nav a.active i {
     color: #532e28;
 }
 
@@ -62,6 +63,14 @@ nav a.active i {
 
 #rightColumn h2 {
     color:#532e28;
+}
+
+#rightColumn button {
+    width: 110px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 #profile-form {

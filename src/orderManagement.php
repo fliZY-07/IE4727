@@ -82,9 +82,6 @@
             
                 if ($result) {
                     while ($row = $result->fetch_assoc()) {  
-                        // echo "<pre>";
-                        // print_r($row);  
-                        // echo "</pre>";
                         echo "<tr>";
                         echo '<td>'. htmlspecialchars($row['orderDate']) .'</td>';
                         echo '<td>' . htmlspecialchars($row['customer']) . '</td>';
@@ -98,6 +95,7 @@
                                 <form method="POST" action="updateOrderStatus.php">
                                     <input type="hidden" name="orderId" value="' . $row['orderId'] . '">
                                     <select name="status" onchange="this.form.submit()">
+                                        <option selected></option>
                                         <option value="Shipped">Shipped</option>
                                         <option value="Out For Delivery">Out for Delivery</option>
                                         <option value="Received">Delivered</option>

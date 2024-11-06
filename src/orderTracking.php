@@ -11,7 +11,7 @@
     <header>
         <div id="searchbar">
             <a href="#"><img src="../static/asset/image/logo.png" class="logo" alt="logo"></a>
-            <input type="text" placeholder="search">
+            <!-- <input type="text" placeholder="search"> -->
         </div>
 
         <div>
@@ -120,8 +120,7 @@
                         $product = $productResult->fetch_assoc();
 
                         echo '<div class="orderItem">';
-                        echo '<img src="' . htmlspecialchars($product['productImage']) . '" alt="Product Image" class="order-image">';
-                        echo '<div class="orderDetails">';
+                        echo '<div class="orderDetails"><img src="' . htmlspecialchars($product['productImage']) . '" alt="Product Image"">';
                         echo '<div class="orderInfo">';
                         echo '<h3>' . htmlspecialchars($product['productName']) . '</h3>';
                         echo '<p>' . htmlspecialchars($product['descrip']) . '</p>';
@@ -137,6 +136,8 @@
                         if ($rowOrder['orderStatus'] === 'Out for delivery') {
                             echo '<button id="receive">Received</button>';
                         }
+
+                        if ($rowOrder)
                         echo '</div>';
                         echo '</div>'; // Close order-item
                     }

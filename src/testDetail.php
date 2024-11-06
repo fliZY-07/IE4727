@@ -57,7 +57,7 @@ if ($SERVER['REQUEST_METHOD'] == "POST"){
     <section id="header">
         <div id="logosearch">
             <a href="#"><img src="./assets/logo.png" class="logo" alt=""></a>
-        <input type="text" placeholder="search">
+        <!-- <input type="text" placeholder="search"> -->
         </div>
         <div>
             <ul id="navbar">

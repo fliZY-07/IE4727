@@ -10,22 +10,22 @@ const cardNo_errormsg = document.getElementById('cardNoError');
 const expiry_errormsg = document.getElementById('expiryError');
 const cvv_errormsg = document.getElementById('cvvError');
 
-email_input.addEventListener("input", validateEmail);
+// email_input.addEventListener("input", validateEmail);
 name_input.addEventListener("input", validateName);
 cardNo_input.addEventListener("input", validateCardNo);
 expiry_input.addEventListener("input", validateExpiry);
 cvv_input.addEventListener("input", validateCVV);
 
-function validateEmail() {
-    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,}){0,2}$/;
-    if (!email_input.value.match(emailPattern)) {
-        email_input.classList.add("incorrect");
-        email_errormsg.textContent = "Please enter a valid email";
-    } else {
-        email_input.classList.remove("incorrect");
-        email_errormsg.textContent = "";
-    }
-}
+// function validateEmail() {
+//     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\.[a-zA-Z]{2,})$/;
+//     if (!email_input.value.match(emailPattern)) {
+//         email_input.classList.add("incorrect");
+//         email_errormsg.textContent = "Please enter a valid email";
+//     } else {
+//         email_input.classList.remove("incorrect");
+//         email_errormsg.textContent = "";
+//     }
+// }
 
 function validateName() {
     const namePattern = /^[a-zA-Z\s]+$/; // allows only alphabetic characters and spaces
@@ -97,7 +97,6 @@ form.addEventListener("submit", function(event) {
     
     // Check if there are any error messages
     if (name_input.classList.contains("incorrect") ||
-        email_input.classList.contains("incorrect") ||
         cardNo_input.classList.contains("incorrect") ||
         expiry_input.classList.contains("incorrect") ||
         cvv_input.classList.contains("incorrect")) {

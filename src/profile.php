@@ -13,7 +13,7 @@
     <header>
         <div id="searchbar">
             <a href="#"><img src="../static/asset/image/logo.png" class="logo" alt="logo"></a>
-            <input type="text" placeholder="search">
+            <!-- <input type="text" placeholder="search"> -->
         </div>
 
         <div>
@@ -72,10 +72,10 @@
                     if ($result && $result->num_rows > 0) {
                         $user = $result->fetch_assoc();
                         echo '<div>';
-                        echo '<h2>Name: ' . htmlspecialchars($user["firstName"]) . ' ' . htmlspecialchars($user["lastName"]) . '</h2>';
-                        echo '<h2>Email: ' . htmlspecialchars($user["email"]) . '</h2>';
-                        echo '<h2>Phone Number: ' . htmlspecialchars($user["phoneNo"]) . '</h2>';
-                        echo '<h2>Address: ' . htmlspecialchars($user["customerAddress"]) . '</h2>';
+                        echo '<h3>Name: ' . htmlspecialchars($user["firstName"]) . ' ' . htmlspecialchars($user["lastName"]) . '</h3>';
+                        echo '<h3>Email: ' . htmlspecialchars($user["email"]) . '</h3>';
+                        echo '<h3>Phone Number: ' . htmlspecialchars($user["phoneNo"]) . '</h3>';
+                        echo '<h3>Address: ' . htmlspecialchars($user["customerAddress"]) . '</h3>';
                         echo '</div>';
                     } else {
                         echo "<p>No details available</p>";
@@ -112,8 +112,8 @@
         </div>
         
         <div>
-            Copyright &copy; the Style LOFT
-            <br>by Joshua & ZhiYi<br>
+            <p>Copyright &copy; the Style LOFT
+            <br>by Joshua & ZhiYi<br></p>
         </div>
     </footer>
 

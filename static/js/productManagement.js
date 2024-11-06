@@ -1,11 +1,8 @@
-const deleteBtn = document.getElementById("delete");
-deleteBtn.addEventListener("click", () => {
-    const productIdElement = document.getElementById("productId");
-    
-    // Ensure productId exists and is a valid integer
-    if (productIdElement) {
-        const productId = parseInt(productIdElement.innerText);
-
+const deleteBtns = document.querySelectorAll(".delete");
+deleteBtns.forEach(deleteBtn => {
+    deleteBtn.addEventListener("click", () => {
+        const productId = parseInt(deleteBtn.getAttribute("data-productId"));
+        console.log(productId);
         // Check if productId is valid
         if (!isNaN(productId)) {
             fetch("./deleteProducts.php", {
@@ -31,7 +28,5 @@ deleteBtn.addEventListener("click", () => {
         } else {
             console.error('Invalid product ID.');
         }
-    } else {
-        console.error('Product ID element not found.');
-    }
-});
+    });
+})

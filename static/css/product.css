@@ -171,4 +171,75 @@ form{
     border: 1px solid #cce7d0;
 }
 
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    z-index: 9;
+    position: fixed;
+    top: 50%;   
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+/* Add styles to the form container */
+.form-container {
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    align-items: center;
+    border-radius: 5px;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #91937b;
+    color: white;
+    padding: 8px 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: #a3764d;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.form-container h1 {
+    font-size: 20px;
+}
+
+.form-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.productInfo {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10px;
+}
+
+.productInfo input[type="number"] {
+    width: 30px;
+}
+
+.buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:10px;
+    margin-top: 8px;
+}
+
+.buttons button {
+    border-radius: 5px;
+}

@@ -50,6 +50,15 @@
 
                             // Fetch results
                             if ($stmt->fetch()) {
+                                if (!$customerAddress) {
+                                    echo "<script>
+                                            alert('Please update your name and address before placing an order. You will be redirected to another page in 2 seconds.');
+                                            setTimeout(function() {
+                                                window.location.href = './updateInfo.php';
+                                            }, 2000);
+                                          </script>";
+                                    exit;
+                                }
                                 echo "<div>";
                                 echo "<h2>Name: $firstName $lastName</h2>";
                                 echo "<p>Address: $customerAddress</p>";
@@ -164,7 +173,7 @@
                         <div id="paymentDetails">
                             <div class="email">
                                 <label for="email" style="font-weight:bold;">Email Address</label>
-                                <input type="text" id="email" placeholder="Enter your email here" required>
+                                <input type="text" id="email" name="email" placeholder="Enter your email here" required>
                                 <span id="emailError"></span>
                             </div>
 
@@ -203,7 +212,6 @@
                     </div>
                 </div>
             </form>
-            <script type = "text/javascript"  src = "../js/paymentValidation.js" ></script>
         </div>
     </div>
 

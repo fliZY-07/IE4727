@@ -11,7 +11,7 @@
     <header>
         <div id="searchbar">
             <a href="#"><img src="../static/asset/image/logo.png" class="logo" alt="logo"></a>
-            <input type="text" placeholder="search">
+            <!-- <input type="text" placeholder="search"> -->
         </div>
 
         <div>
@@ -112,7 +112,7 @@
 
                                 echo '<div class="productDetails">';
                                 echo '<h3>'.$product['productName'].'</h3>';
-                                echo '<p>'.$product['descrip'].'</p><br>';
+                                // echo '<p>'.$product['descrip'].'</p><br>';
                                 echo '<input type="hidden" name="descrip[]" value="'.$product['descrip'].'">'.$product['descrip'].'</input><br>';
                                 echo '<span>Unit Price: </span>';
                                 echo '<span class="unit_price">'.$product["price"].'</span><br>';
@@ -177,11 +177,10 @@
         </div>
         
         <!-- suggestions -->
-        <div id="guess">
+        <!-- <div id="guess">
             <h2>Guess you might like...</h2>
-            <div class="suggestionGrid">
-            <?php
-            //     $categoryQuery = $db->query("SELECT category FROM shoppingCart JOIN products ON shoppingCart.productId = products.productId GROUP BY category");
+            <div class="suggestionGrid"> -->
+            <!-- //     $categoryQuery = $db->query("SELECT category FROM shoppingCart JOIN products ON shoppingCart.productId = products.productId GROUP BY category");
             //     $suggestedCategory = ($categoryQuery->fetch_assoc()['category'] ?? 'both');
                 
             //     // Determine the suggested category
@@ -238,10 +237,9 @@
             //         } else {
             //             echo '<p>No suggestions available at the moment.</p>';
             //         }
-            //     }
-            // ?>
-            </div>
-        </div>
+            //     } -->
+            <!-- </div>
+        </div> -->
     </div>
 
     <footer>
